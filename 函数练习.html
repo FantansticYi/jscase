@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // function getThreeMax(x,y,z){
+        //     return x>y?(x>z?x?z):(y>z?y:z);
+        // }
+        // console.log(getThreeMax(10,2,24));
+
+
+        // function isPrimeNumber(num){
+        //     for(var i=2;i<num;i++){
+        //         if(num%i===0){
+        //             return false;
+        // //         }
+        // //     }
+        // //     return true;
+        // // }
+        // // console.log(isPrimeNumber(8)?"是质数":"不是质数");
+        //
+        // // function getSub(x,y){
+        // //     return x-y;
+        // // }
+        // // console.log(getSub(10,20));
+        //
+        // //求一组数字最小值
+        // function getArrayMin(array){
+        //     var min=array[0];
+        //     for(var i=0;i<array.length;i++){
+        //         if(min>array[i]){
+        //             min=array[i];
+        //         }
+        //     }
+        //     return min;
+        // }
+        // console.log(getArrayMin([10,20,30,40,1]));
+        //
+        // //求一组数组的和
+        // function getArraySum(array){
+        //     var sum=0;
+        //     for(var i=0;i<array.length;i++){
+        //         sum=sum+array[i];
+        //     }
+        //     return sum;
+        // }
+        // console.log(getArraySum([1,2,3,5]));
+        //
+        // //斐波那契
+        // function getFib(num){
+        //     var num1=1;
+        //     var num2=1;
+        //     var sum=0;
+        //     for(var i=3;i<=num;i++){
+        //           sum=num1+num2;
+        //          num1=num2;
+        //          num2=sum;
+        //     }
+        //     return sum;
+        // }
+        // console.log(getFib(12));
+
+        //求一个数字的阶乘
+        function getFactorial(num) {
+            var result = 1;
+            for (var i = 1; i <= num; i++) {
+                result *= i;
+            }
+            return result;
+        }
+
+        console.log(getFactorial(3));
+
+        //阶乘的和
+        function getFactorialSum(num) {
+            var sum = 0;
+            for (var i = 0; i <= num; i++) {
+                sum += getFactorialSum(i);
+            }
+            return sum;
+        }
+
+        console.log(getFactorialSum(5));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

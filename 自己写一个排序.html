@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    var arr=[10,5,25,30,45];
+    function MyArray(){
+        this.mySort=function (arr){
+        for(var i=0;i<arr.length-1;i++){
+            for (var j=0;j<arr.length-1-i;j++){
+                if (arr[j]>arr[j+1]){
+                    var temp=arr[j];
+                        arr[j]=arr[j+1];
+                        arr[j+1]=temp;
+                }
+            }
+        }
+    };
+    }
+    var myArray= new MyArray();
+        myArray.mySort(arr);
+        console.log(arr);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
